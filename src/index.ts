@@ -12,7 +12,7 @@ app.listen(port, () => console.log(`Example app listening on port ${port}!`))
 // 
 // Search filters (SortBy, keyword, page, hitsperpage, refinements)
 // autocomplete filters (keyword, refinements)
-// result (hits)
+// result (hits, refinements, count)
 const abstract_parameters = (req: express.Request) => {
 
 }
