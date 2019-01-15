@@ -14,12 +14,13 @@ app.listen(port, () => console.log(`Example app listening on port ${port}!`))
 // autocomplete filters (keyword, refinements)
 // result (hits, refinements, count)
 const abstract_parameters = (req: express.Request) => {
-
+  console.log(req.body)
 }
 
 // a middleware sub-stack shows request info for any type of HTTP request to the /user/:id path
 router.use('/search', function (req, res, next) {
     console.log('Request URL:', req.originalUrl)
+    console.log('body:', req.body)
     next()
   }, function (req, res, next) {
     console.log('Request Type:', req.method)
