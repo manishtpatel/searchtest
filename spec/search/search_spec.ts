@@ -15,11 +15,14 @@ describe("search should", () => {
         let res = await axios.post(test_server_url + "/search", {
             sortBy: 'name',
             keyword: 'search on me',
-            page: 1,
-            hitsPerPage: 20,
+            hits: {
+                page: 1,
+                perPage: 20,
+            },
             refinements: {
                 ref1: ['test1', 'test2'],
-            }
+            },
+            autocomplete: false,
         })
         
         console.log(res.data)

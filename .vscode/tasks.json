@@ -8,8 +8,17 @@
             "script": "build:watch",
             "problemMatcher": [
                 "$tsc-watch"
-            ],
-            "isBackground": true
+            ] 
+        },
+        {
+            "type": "npm",
+            "script": "start",
+            "problemMatcher": []
+        },
+        {
+            "type": "npm",
+            "script": "elastic",
+            "problemMatcher": []
         }
     ]
 }

@@ -30,8 +30,6 @@ export const setup_test_data = async () => {
       type: "testdocs",
       body
     })
-
-    console.log(result)
   }
 
   console.log('documents count: ' + (await client.count({index: indicesName, type: "testdocs"})).count)

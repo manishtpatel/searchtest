@@ -7,12 +7,14 @@
     "build": "tsc",
     "build:watch": "tsc -w",
     "start": "nodemon ./src/index.js",
-    "test": "jasmine"
+    "test": "jasmine",
+    "elastic": "docker run -p 9200:9200 -p 9300:9300 -e 'discovery.type=single-node' docker.elastic.co/elasticsearch/elasticsearch:6.5.4"
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
     "axios": "^0.18.0",
+    "body-parser": "^1.18.3",
     "elasticsearch": "^15.3.0",
     "express": "^4.16.4",
     "request": "^2.88.0",
